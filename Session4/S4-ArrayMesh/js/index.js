@@ -8,16 +8,16 @@ function init() {
 
   var W = window.innerWidth,
       H = window.innerHeight;
-
+//create camera and define its position
   camera = new THREE.PerspectiveCamera(45, W / H, .1, 1000);
   camera.position.set(20, 50, 85);
   camera.lookAt(scene.position);
-
+//create light
   var spotLight = new THREE.SpotLight(0xFFFFFF);
   spotLight.position.set(0, 1000, 0);
   scene.add(spotLight);
   //spotLight.castShadow = true;
-
+//create light
   var ambLight = new THREE.AmbientLight(0xFFFFFF);
 ambLight.position.set(0,1000,0);
 ambLight.add(spotLight);
@@ -25,11 +25,11 @@ scene.add(ambLight);
 
 
   renderer = new THREE.WebGLRenderer({antialias:true});
-  renderer.setClearColor(0x17293a);
+  renderer.setClearColor(0x17293a);//define background colour
   renderer.setSize(W, H);
   //renderer.shadowMapEnabled = true;
 
-
+//create controls to camera and renderer
 controls = new THREE.OrbitControls(camera,renderer.domElement);
   //Create a two dimensional grid of objects, and position them accordingly
   for (var x = -10; x <= 10; x += 5) { // Start from -45 and sequentially add one every 5 pixels
@@ -38,11 +38,10 @@ controls = new THREE.OrbitControls(camera,renderer.domElement);
 
 //Concatenation of the x and y values (open console to see)
 console.log("X:" +x+ ",Y : " +y+ ",Z:" +z);
-
+//create cubes
       var boxGeometry = new THREE.BoxGeometry(3, 3, 3);
       var boxMaterial = new THREE.MeshLambertMaterial({color:  0xFFFFFF});
       //The color of the material is assigned a random color
-
   if (x >= 0 && y >= 0 && z >= 0){
          boxMaterial = new THREE.MeshLambertMaterial({color: 0xF67280});
         }else if ( x <= 0 && y >=0 && z >= 0){
@@ -110,7 +109,7 @@ document.body.appendChild(renderer.domElement);
   document.body.appendChild(renderer.domElement);
 
 
-}
+}//add random rotation on each cube 
 function drawFrame(){
 requestAnimationFrame(drawFrame);
   renderer.render(scene, camera);
