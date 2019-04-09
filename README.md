@@ -17,3 +17,5 @@ The second reason is that foundation plays an important   role in this area.We s
 The third reason is that I often meet difficulties when I make works. When pages say there may be some mistakes in code which make codes stop running. I usually need to spend some time to find the wrong codes and find solutions. Although it always takes a long time but it is still a good experience for me to accumulate and learn new knowledge.At the same time it is a good chance to communicate with classmates,we share our ideas and find solutions to overcome challenges together.
 
 Codes have high requirements in logic respect and they can not tolerate any mistakes even one word. This is a new area for me because I am not good at these so that I attempt to overcome every mistakes and know the principle of different codes.Three.js is an necessary ability for us so that I need to devote more for it. In the third class I make the first  work to show my ideas by three.js.
+
+![https://github.com/balawahu/DAT505-Code/blob/master/First%20homework.PNG]
