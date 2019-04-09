@@ -19,8 +19,12 @@ The third reason is that I often meet difficulties when I make works. When pages
 Codes have high requirements in logic respect and they can not tolerate any mistakes even one word. This is a new area for me because I am not good at these so that I attempt to overcome every mistakes and know the principle of different codes.Three.js is an necessary ability for us so that I need to devote more for it. In the third class I make the first  work to show my ideas by three.js.
 
 ![Image text](https://raw.githubusercontent.com/balawahu/DAT505-Code/master/First%20homework.PNG)
+( DAT505-GitHub\Session3\homework1)
 
 Rotation and angle of objects can be controlled by players on X,Y and Z.Colors of different objects will change in every angle.I want to practise what I learnt at that time.Further more,in other angles player will just see different cubes in different colors but every objects will consist of a new square in special angle.Two rings moving around them are aim to show
 "round sky and square earth" which is a proverb in ancient time.
 
 In conclusion,three.js is a valuable platform to express things and art.Despite that I was not familiar with it I will try my best to learn from website and other outstanding works to enrich knowledge and create art works.
+
+
+Session list
