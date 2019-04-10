@@ -103,7 +103,7 @@ var material = new THREE.MeshPhysicalMaterial({
   claerCoatRoughness: 0
 });
 */
-
+//Define mesh to geometry
 mesh = new THREE.Mesh( geometry, material );
 mesh.position.z = -1000;
 // ------------------------------------------------

@@ -4,9 +4,9 @@ var kaleidoParams, kaleidoPass;
 var rgbPass, rgbParams;
 var t1 = 0;
 var t2 = 0;
-var t3 = 0;
+var t3 = 0;//Add things and t1,t2,t3
 
-var glitchPass;
+var glitchPass;//Add glitchPass
 
 window.onload = function() {
   init();
@@ -17,7 +17,7 @@ function updateOptions() {
   //var wildGlitch = document.getElementById( 'wildGlitch' );
   //glitchPass.goWild = wildGlitch.checked;
 }
-
+//init renderer
 function init() {
   renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
   renderer.setPixelRatio((window.devicePixelRatio) ? window.devicePixelRatio : 1);
@@ -25,21 +25,21 @@ function init() {
   renderer.autoClear = false;
   renderer.setClearColor(0x000000, 0.0);
   document.getElementById('canvas').appendChild(renderer.domElement);
-
+//Define scene,camera
   scene = new THREE.Scene();
 
   camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 1000);
   camera.position.z = 400;
-  scene.add(camera);
-
+  scene.add(camera);//Add camera to scene
+//Define planetobject,skeletonobject and partclesobject
   planetObject = new THREE.Object3D();
   skeletonObject = new THREE.Object3D();
   particlesObject = new THREE.Object3D();
-
+//Add planetObject,skeletonObject and particlesObject to scene
   scene.add(planetObject);
   scene.add(skeletonObject);
   scene.add(particlesObject);
-
+//Create planetobject,skeletonobject and partclesobject
   var particlesGeometry = new THREE.TetrahedronGeometry(2, 0);
   var planetGeometry = new THREE.IcosahedronGeometry(7, 1);
   var skeletonGeometry = new THREE.IcosahedronGeometry(15, 1);
@@ -48,7 +48,7 @@ function init() {
     color: 0xffffff,
     shading: THREE.FlatShading
   });
-
+//Define number of objects
   for (var i = 0; i < 1500; i++) {
     var particlesMesh = new THREE.Mesh(particlesGeometry, particlesMaterial);
     particlesMesh.position.set(Math.random() - 0.5, Math.random() - 0.5, Math.random() - 0.5).normalize();
@@ -58,7 +58,7 @@ function init() {
     particlesMesh.scale.set(randScale, randScale, randScale);
     particlesObject.add(particlesMesh);
   }
-
+//Define details of objects mesh and material
   var planetMaterial = new THREE.MeshPhongMaterial({
     color: 0xffffff,
     shading: THREE.FlatShading
@@ -80,7 +80,7 @@ function init() {
 
   var ambientLight = new THREE.AmbientLight(0x999999 );
   scene.add(ambientLight);
-
+//Create light
   var lights = [];
   lights[0] = new THREE.DirectionalLight( 0xffffff, 0.2 );
   lights[0].position.set( 1, 2, -0.5);
@@ -108,16 +108,16 @@ function init() {
 
   kaleidoPass = new THREE.ShaderPass (THREE.ToneMapShader);
   composer.addPass ( kaleidoPass );
-
+//Create glitchPass and make mistakes effect
   var glitchPass = new THREE.GlitchPass();
   glitchPass.renderToScreen = true;
   composer.addPass( glitchPass );
-
+//Define rgbParams
   rgbParams = {
     amount: 0.5,
     angle: 0.0
   }
-
+//Define kaleidoParams
   kaleidoParams = {
     sides: 2,
     angle: 0.0

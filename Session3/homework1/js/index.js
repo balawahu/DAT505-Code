@@ -419,7 +419,7 @@ mesh23.rotation.x=(controller.rotationX);
 mesh24.rotation.x=(controller.rotationX);
 
 });
-//Add controller for rotation Y
+//Add controller for each object on rotation Y
 f1.add(controller,'rotationY',-10,10).onChange( function() {
   mesh.rotation.y=(controller.rotationY);
 mesh2.rotation.y=(controller.rotationY);

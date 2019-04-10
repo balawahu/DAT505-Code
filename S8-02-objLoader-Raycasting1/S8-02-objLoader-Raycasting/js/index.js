@@ -32,7 +32,7 @@ function init() {
 	mtlLoader.load("Blocks.mtl", function(materials){
 
 		materials.preload();
-
+//load 3D object to scene
     var objLoader = new THREE.OBJLoader();
 		objLoader.setMaterials(materials);
 
@@ -42,12 +42,12 @@ function init() {
   					node.castShadow = true;
   					node.receiveShadow = true;
   				}
-  			});
+  			});//define size on random
         var sizeRand = Math.random() * 0.5;
         mesh.scale.set(sizeRand,sizeRand,sizeRand);
         mesh.position.set(Math.random()*800-400, Math.random()*800-400, Math.random()*800-400);
         mesh.rotation.y = -Math.PI/Math.random()*4;
-
+//Add mesh to scene
         scene.add(mesh);
         objects.push(mesh); //Add to the array so that we can access for raycasting
   		});
@@ -67,13 +67,13 @@ function init() {
   document.addEventListener( 'mousedown', onDocumentMouseDown, false );
   window.addEventListener( 'resize', onWindowResize, false );
 }
-
+//Camera move
 function onWindowResize() {
   camera.aspect = window.innerWidth / window.innerHeight;
   camera.updateProjectionMatrix();
   renderer.setSize( window.innerWidth, window.innerHeight );
 }
-
+//Add click function
 function onDocumentMouseMove( event ) {
   event.preventDefault();
   mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;

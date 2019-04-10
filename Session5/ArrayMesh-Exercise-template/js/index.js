@@ -9,7 +9,7 @@ function init() {
 
   var W = window.innerWidth,
   H = window.innerHeight;
-
+//Create camera
   camera = new THREE.PerspectiveCamera(45, W / H, .1, 1000);
   camera.position.set(0, 55, 85);
   camera.lookAt(scene.position);
@@ -23,7 +23,7 @@ function init() {
   renderer.setClearColor(0x17293a);
   renderer.setSize(W, H);
   //renderer.shadowMapEnabled = true;
-
+//Add control to camera and make it move with mouse
   controls = new THREE.OrbitControls(camera, renderer.domElement);
 
   //Create a two dimensional grid of objects, and position them accordingly
@@ -41,10 +41,10 @@ function init() {
       } else {
         boxMaterial = new THREE.MeshLambertMaterial({color: 0xFFFFFF});
       }
-
+//Create mesh
       var mesh = new THREE.Mesh(boxGeometry, boxMaterial);
       //mesh.castShadow = true;
-
+//Add special position to designated cubes
       mesh.position.x = x;
       mesh.position.z = y;
       //mesh.scale.y = 0.5;

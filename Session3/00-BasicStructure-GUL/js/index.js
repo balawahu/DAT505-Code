@@ -95,7 +95,7 @@ var render = function () {
 
   mesh.rotation.x += 0.01; //Continuously rotate the mesh
   mesh.rotation.y += 0.01;
-
+//Define scene color
   renderer.setClearColor("#99CCFF");
 
   // Render the scene

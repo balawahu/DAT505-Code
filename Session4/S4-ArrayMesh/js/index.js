@@ -1,3 +1,4 @@
+//Create render,scene,camera,controls and rot
 var renderer, scene, camera;
 var controls;
 var cubes = [];
@@ -83,7 +84,7 @@ if (x <= 0 && y <= 0){
         mesh.position.y = y;
     //  mesh.scale.y = 0.5;
       scene.add(mesh);
-      cubes.push(mesh);
+      cubes.push(mesh);//Put cubes to a mesh
 }
 }
 }
@@ -109,7 +110,7 @@ document.body.appendChild(renderer.domElement);
   document.body.appendChild(renderer.domElement);
 
 
-}//add random rotation on each cube 
+}//add random rotation to each cube
 function drawFrame(){
 requestAnimationFrame(drawFrame);
   renderer.render(scene, camera);

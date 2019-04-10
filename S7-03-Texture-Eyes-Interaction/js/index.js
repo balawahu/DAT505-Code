@@ -50,7 +50,7 @@ for(c=0;c<10;c++){
 			uvs[ j ].y = face.vertexNormals[ j ].y * 0.5 + 0.5;
 		}
 	}
-	
+	//Define objects scales and positions to make them on random
 var cubescale=(Math.random()*-2)+1;
   mesh = new THREE.Mesh( geometry, material );
 	mesh.position.x=Math.random()*-200+40;
@@ -58,10 +58,10 @@ var cubescale=(Math.random()*-2)+1;
 	mesh.scale.x=cubescale;
 	mesh.scale.y=cubescale;
 	mesh.scale.z=cubescale;
-	scene.add( mesh );
-	cubes.push(mesh);
+	scene.add( mesh );//Add mesh to scene
+	cubes.push(mesh);//Put mesh to a group
 };
-
+//Add render
 	renderer = new THREE.WebGLRenderer();
 	renderer.setPixelRatio( window.devicePixelRatio );
 	renderer.setSize( window.innerWidth, window.innerHeight );
@@ -75,7 +75,7 @@ function animate() {
 	requestAnimationFrame( animate );
 	render();
 }
-
+//Make each eye face mouse with it change position
 function render() {
 	console.log(window.innerHeight)
 	cubes.forEach(function(c,i){

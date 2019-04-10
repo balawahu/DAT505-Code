@@ -1,6 +1,6 @@
 var renderer, scene, camera;
 var controls, group;
-
+//Create raycaster and mouseVector
 var raycaster = new THREE.Raycaster();
 var mouseVector = new THREE.Vector3();
 
@@ -20,7 +20,7 @@ function init() {
   // init scene
   scene = new THREE.Scene();
   scene.background = new THREE.Color( 0xffffff );
-
+//init group and add it to scene
   group = new THREE.Group();
   scene.add( group );
 
@@ -28,7 +28,7 @@ function init() {
   camera = new THREE.PerspectiveCamera( 50, window.innerWidth / window.innerHeight, 1, 1000 );
   camera.position.set( 15, 15, 15 );
   camera.lookAt( scene.position );
-
+//Add controls
   controls = new THREE.OrbitControls( camera, renderer.domElement );
   controls.enableRotate = true;
 
@@ -76,13 +76,13 @@ function onDocumentMouseDown( event ) {
 
   }
 
-
+//Add intersects to objects
   var intersects = getIntersects( event.layerX, event.layerY );
   if ( intersects.length > 0 ) {
     var res = intersects.filter( function ( res ) {
       return res && res.object;
     } )[ 0 ];
-//
+//Add changing scale to Selected object
     if ( res && res.object ) {
       selectedObject = res.object;
       selectedObject.scale.set( Math.random()*10,Math.random()*10,Math.random()*10);

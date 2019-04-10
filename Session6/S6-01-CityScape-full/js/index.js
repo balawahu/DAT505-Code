@@ -1,18 +1,18 @@
 // GLOBALS ======================================================
 var camera, scene, renderer, controls, clock;
-var INV_MAX_FPS = 1 / 100, frameDelta = 0;
+var INV_MAX_FPS = 1 / 100, frameDelta = 0;//Create the max frames and frames in each second
 
 var floor;
 
 // SETUP ========================================================
 function setup() {
-  document.body.style.backgroundColor = '#d7f0f7';
+  document.body.style.backgroundColor = '#d7f0f7';//Define background color
   setupThreeJS();
   setupWorld();
 
   requestAnimationFrame(function animate() {
     draw();
-
+//Define speed of frame
     frameDelta += clock.getDelta();
     while (frameDelta >= INV_MAX_FPS) {
       update(INV_MAX_FPS);
@@ -22,7 +22,7 @@ function setup() {
     requestAnimationFrame( animate );
   });
 }
-
+//Add scene and camera,define details
 function setupThreeJS() {
   scene = new THREE.Scene();
   scene.fog = new THREE.FogExp2(0x9db3b5, 0.002);
@@ -38,7 +38,7 @@ function setupThreeJS() {
   renderer.setClearColor(0x17293a, 1);
 
   document.body.appendChild( renderer.domElement );
-
+//Define clock and controls
   clock = new THREE.Clock();
   controls = new THREE.FirstPersonControls(camera);
   controls.movementSpeed = 100;
@@ -98,7 +98,7 @@ color: Math.random()});
   //light.shadowCameraTop = d;
   //light.shadowCameraBottom = -d;
   //light.shadowCameraFar = 2500;
-  scene.add(light);
+  scene.add(light);//Add light to scene
 }
 
 // DRAW =========================================================

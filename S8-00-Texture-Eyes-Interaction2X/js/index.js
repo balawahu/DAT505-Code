@@ -1,11 +1,11 @@
 // MatCap-style image rendered on a sphere
 // modify sphere UVs instead of using a ShaderMaterial
-
+//Create camera,scene,renderer,mesh,image,container
 var camera, scene, renderer, mesh;
 var image;
 var mouseX = 0, mouseY = 0;
 var container;
-
+//Create eyes number
 var eyesNum = 5;
 var eyes = [];
 var xPos = [];
@@ -22,13 +22,13 @@ animate();
 function init() {
 	container = document.createElement( 'div' );
 	document.body.appendChild( container );
-
+//Add scene
 	scene = new THREE.Scene();
-
+//Add camera
 	camera = new THREE.PerspectiveCamera( 40, window.innerWidth / window.innerHeight, 1, 1000 );
 	camera.position.set( 0, 0, 150 );
   scene.add( camera ); // since light is child of camera
-
+//Create light,geometry,material and add ambientlight to scene
 	scene.add( new THREE.AmbientLight( 0xffffff, 0.2 ) );
 	var light = new THREE.PointLight( 0xffffff, 1 );
 	camera.add( light );
@@ -53,10 +53,10 @@ function init() {
 			uvs[ j ].y = face.vertexNormals[ j ].y * 0.5 + 0.5;
 		}
 	}
-
+//Define eyes number
 	for (var i = 0; i < eyesNum; i++) {
 		mesh = new THREE.Mesh( geometry, material );
-
+//Define eyes position on X and Y
 		xPos[i] = Math.random() * 100 - 50;
 		yPos[i] = Math.random() * 100 - 50;
 
@@ -82,12 +82,12 @@ function init() {
 
 		mesh.position.x = xPos[i];
 		mesh.position.y = yPos[i];
-
+//Define scale on random
 		var randSize = Math.random() * 0.8;
 		mesh.scale.x = randSize;
 		mesh.scale.y = randSize;
 		mesh.scale.z = randSize;
-
+//Add mesh to scene and put eyes to mesh
 		scene.add( mesh );
 		eyes.push( mesh );
 	}

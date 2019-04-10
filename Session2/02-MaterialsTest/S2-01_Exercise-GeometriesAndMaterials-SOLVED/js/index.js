@@ -66,7 +66,7 @@ var material = new THREE.MeshLambertMaterial({
 //var material = new THREE.MeshPhongMaterial({shininess: 1});
 
 //MATERIAL 5 (non-shiny material):
-
+//Create material to geometry and define details
 var material = new THREE.MeshLambertMaterial({
   color: '#D2BE82',
   lightMap: null,
@@ -123,7 +123,7 @@ var material = new THREE.MeshPhysicalMaterial({
   claerCoatRoughness: 0
 });
 */
-
+//Add mesh to geometry and define position
 var mesh1 = new THREE.Mesh( geometry4, material9 );
 mesh1.position.z = -1000;
 mesh1.position.y = 100;
@@ -179,7 +179,7 @@ scene.add( mesh7 );
 scene.add( mesh8 );
 
 
-
+//Add rot
 var rot = 0;
 
 // Render Loop

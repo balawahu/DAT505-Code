@@ -19,7 +19,7 @@ var sound = new THREE.Audio( listener );
 var audioLoader = new THREE.AudioLoader();
 
 
-
+//init container and camera
 function init() {
   container = document.createElement( 'div' );
   document.body.appendChild( container );
@@ -28,23 +28,23 @@ function init() {
 
   //Audio - Settings
   camera.add( listener );
-
+//Add scene
   scene = new THREE.Scene();
   scene.background = new THREE.Color( 0xf0f0f0 );
-
+//Create light
   var light = new THREE.DirectionalLight( 0xffffff, 1 );
   light.position.set( 1, 1, 1 ).normalize();
   scene.add( light );
-
+//Create geometry
   var geometry = new THREE.BoxBufferGeometry( 20, 20, 20 );
-
+//Define number of objects
   for (var i=0; i<500; i++){
   // Model/material loading!
 	var mtlLoader = new THREE.MTLLoader();
 	mtlLoader.load("Blocks.mtl", function(materials){
 
 		materials.preload();
-
+//Create object loader and load 3D object to scene
     var objLoader = new THREE.OBJLoader();
 		objLoader.setMaterials(materials);
 
@@ -54,7 +54,7 @@ function init() {
   					node.castShadow = true;
   					node.receiveShadow = true;
   				}
-  			});
+  			});//Define size and position
         var sizeRand = Math.random() * 0.5;
         mesh.scale.set(sizeRand,sizeRand,sizeRand);
         mesh.position.set(Math.random()*800-400, Math.random()*800-400, Math.random()*800-400);
@@ -65,7 +65,7 @@ function init() {
   		});
   	});
   }
-
+//Add raycaster
   raycaster = new THREE.Raycaster();
 
   renderer = new THREE.WebGLRenderer();
@@ -111,7 +111,7 @@ function render() {
   //Find intersections
   raycaster.setFromCamera( mouse, camera );
   //var intersects = raycaster.intersectObjects( scene.children );
-
+//Create intersects to objects and make them reflect to mouse
   var intersects = raycaster.intersectObjects( objects, true );
 
   if ( intersects.length > 0 ) {
@@ -120,7 +120,7 @@ function render() {
       INTERSECTED = intersects[ 0 ].object;
       INTERSECTED.currentHex = INTERSECTED.material.emissive.getHex();
       INTERSECTED.material.emissive.setHex( 0xff0000 );
-
+//load audio and define sound
       audioLoader.load( 'audio/Diploship.mp3', function( buffer ) {
         sound.setBuffer( buffer );
         sound.setLoop( false );

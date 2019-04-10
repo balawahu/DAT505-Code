@@ -1,4 +1,5 @@
 //Global variables
+//add objects,scene,camera and render
 var scene, camera, renderer;
 var geometry1,geometry2, material,material, mesh1,mesh2,border,i,j,k;
 
@@ -44,9 +45,9 @@ function geometry(){
   mesh2.position.set(1,1,1);
   mesh2.position.z = -800;
 
-
+//Add mesh2 to scene
   scene.add( mesh2 );
-
+//Create light
   var spotLight = new THREE.SpotLight(0xffffff);
   spotLight.position.set(40,60,10);
   scene.add(spotLight);
@@ -62,7 +63,7 @@ var render = function () {
   mesh2.rotation.x += 0.02; //Continuously rotate the mesh
   mesh2.rotation.y += 0.02;
 
-
+//Define scene color
   renderer.setClearColor("#2A3867");
 
   // Render the scene

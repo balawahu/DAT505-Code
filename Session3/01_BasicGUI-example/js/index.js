@@ -1,7 +1,7 @@
 //Global variables
 var scene, camera, renderer;
 var geometry, material, mesh, threejs, color;
-
+//Add WIDTH and HEIGHT and define
 var WIDTH = window.innerWidth,
 HEIGHT = window.innerHeight;
 
@@ -15,7 +15,7 @@ var de2ra = function(degree) {
 
 init();
 render();
-
+//Use the Initialise method
 function init(){
   threejs = document.getElementById('threejs');
 
@@ -73,7 +73,7 @@ function init(){
     //this.castShadow = true;
     this.boxOpacity = 1;
   }();
-
+//Add control page,load plug-ins, define which should be controlled and range
   var gui = new dat.GUI();
   var f1 = gui.addFolder('Scale');
   f1.add(controller, 'scaleX', 0.1, 5).onChange( function() {
@@ -139,7 +139,7 @@ function render () {
   // Render the scene
   renderer.render(scene, camera);
 };
-
+//Add light
 function lightingSystem(){
   var object3d  = new THREE.DirectionalLight('white', 0.15);
   object3d.position.set(6,3,9);
@@ -155,7 +155,7 @@ function lightingSystem(){
   object3d.position.set(9, 9, 6);
   object3d.name = 'Fill light';
   scene.add(object3d);
-
+//Add light
   var spotLight = new THREE.SpotLight( 0xffffff );
   spotLight.position.set( 3, 30, 3 );
   spotLight.castShadow = true;
