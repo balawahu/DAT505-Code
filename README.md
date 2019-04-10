@@ -8,7 +8,7 @@ Session list
 
 *Session1*
 
-1.![Image text](https://raw.githubusercontent.com/balawahu/DAT505-Code/master/1.PNG)
+1.![Image text](https://raw.githubusercontent.com/balawahu/DAT505-Code/master/Pictures/1.PNG)
 (DAT505-GitHub\Session1\00-Test)
 
 *Session2*
@@ -27,7 +27,7 @@ Session list
 2.![Image text](https://raw.githubusercontent.com/balawahu/DAT505-Code/master/Pictures/5.PNG)
 (DAT505-GitHub/Session3/01_BasicGUI-example/index.html)
 
-3.![Image text](https://raw.githubusercontent.com/balawahu/DAT505-Code/master/First%20homework.PNG)
+3.![Image text](https://raw.githubusercontent.com/balawahu/DAT505-Code/master/Pictures/First%20homework.PNG)
 ( DAT505-GitHub\Session3\homework1)
 
 Rotation and angle of objects can be controlled by players on X,Y and Z.Colors of different objects will change in every angle.I want to practise what I learnt at that time.Further more,in other angles player will just see different cubes in different colors but every objects will consist of a new square in special angle.Two rings moving around them are aim to show
