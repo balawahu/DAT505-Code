@@ -58,3 +58,26 @@ Rotation and angle of objects can be controlled by players on X,Y and Z.Colors o
 
 2.![Image text](https://raw.githubusercontent.com/balawahu/DAT505-Code/master/Pictures/11.PNG)
 ( DAT505-GitHub\S7-03-Texture-Eyes-Interaction)
+
+*Session8*
+
+1.![Image text](https://raw.githubusercontent.com/balawahu/DAT505-Code/master/Pictures/12.PNG)
+( DAT505-GitHub\S8-00-Texture-Eyes-Interaction2X)
+
+2.![Image text](https://raw.githubusercontent.com/balawahu/DAT505-Code/master/Pictures/13.PNG)
+( DAT505-GitHub\S8-01-RaycastSprite)
+
+3.![Image text](https://raw.githubusercontent.com/balawahu/DAT505-Code/master/Pictures/14.PNG)
+( DAT505-GitHub\S8-02-objLoader-Raycasting1\S8-02-objLoader-Raycasting)
+
+*Session9*
+
+1.![Image text](https://raw.githubusercontent.com/balawahu/DAT505-Code/master/Pictures/15.PNG)
+( DAT505-GitHub\S9-01-RaycastAudio)
+
+2.![Image text](https://raw.githubusercontent.com/balawahu/DAT505-Code/master/Pictures/16.PNG)
+(DAT505-GitHub\S9-02-PostProcessing-Glitch)
+
+----------
+
+07/04/2019
