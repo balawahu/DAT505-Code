@@ -1,6 +1,6 @@
-var container, stats;
-var camera, scene, raycaster, renderer;
-
+var container, stats;//Create container and stats
+var camera, scene, raycaster, renderer;//Create camera,scene,raycaster and renderer
+//Create mouse,radius and objects
 var mouse = new THREE.Vector2(), INTERSECTED;
 var radius = 100, theta = 0;
 var object;

@@ -1,4 +1,5 @@
 //Global variables
+//Create empty scene,camera,renderer,geometry,material,mesh,threejs and color
 var scene, camera, renderer;
 var geometry, material, mesh, threejs, color;
 //Add WIDTH and HEIGHT and define
@@ -40,13 +41,13 @@ function init(){
   // Create a Cube Mesh with material ---------
   geometry = new THREE.BoxGeometry(1, 10, 10);
   color = Math.random() * 0xffffff;
-
+//Define material
   var material = new THREE.MeshLambertMaterial({
     //ambient: color,
     color: color,
     transparent: true
   });
-
+//Define mesh
   mesh = new THREE.Mesh(geometry, material);
   mesh.position.set(-45, 0, 0);
   mesh.rotation.set(0, 0, 0);
@@ -54,7 +55,7 @@ function init(){
   mesh.scale.set(1, 1, 1);
   mesh.doubleSided = true;
   mesh.castShadow = true;
-  scene.add(mesh);
+  scene.add(mesh);//Add mesh to scene
 
   lightingSystem();
 
@@ -139,7 +140,7 @@ function render () {
   // Render the scene
   renderer.render(scene, camera);
 };
-//Add light
+//Add light and init lightsystem
 function lightingSystem(){
   var object3d  = new THREE.DirectionalLight('white', 0.15);
   object3d.position.set(6,3,9);
@@ -155,7 +156,7 @@ function lightingSystem(){
   object3d.position.set(9, 9, 6);
   object3d.name = 'Fill light';
   scene.add(object3d);
-//Add light
+//Add light and define details
   var spotLight = new THREE.SpotLight( 0xffffff );
   spotLight.position.set( 3, 30, 3 );
   spotLight.castShadow = true;
@@ -164,5 +165,5 @@ function lightingSystem(){
   spotLight.shadow.camera.near = 1;
   spotLight.shadow.camera.far = 4000;
   spotLight.shadow.camera.fov = 45;
-  scene.add( spotLight );
+  scene.add( spotLight );//Add light to scene
 }

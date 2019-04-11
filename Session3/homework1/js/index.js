@@ -1,4 +1,5 @@
 //Global variables
+//Create scene,camera,renderer and objects
 var scene, camera, renderer;
 var geometry1,geometry2,geometry3,geometry4, material1, material2,material3,material4,mesh,mesh2,mesh3,mesh4;
 var geometry5,geometry6,geometry7,material5,material6,material7,mesh5,mesh6,mesh7;
@@ -71,26 +72,26 @@ var geometry26= new THREE.TorusBufferGeometry(350, 3, 16,100);
   var material2 = new THREE.MeshBasicMaterial({
       color: "#F4A460",
 
-      });
+    });//MATERIAL 3
     var material3 = new THREE.MeshBasicMaterial({
           color: "#FA8072",
 
-          });
+        });//MATERIAL 4
 var material4 = new THREE.MeshBasicMaterial({
         color: "#76EEC6",
 
-});
+});//MATERIAL 5
 var material5 = new THREE.MeshBasicMaterial({
         color: "#8968CD",
 
-});
+});//MATERIAL 6
 var material6 = new THREE.MeshBasicMaterial( {
    color: "#C0FF3E"
-  } );
+ } );//MATERial 7
   var material7 = new THREE.MeshBasicMaterial({
           color: "#C1FFC1",
 
-  });
+  });//MATERIAL 8
   var material8 = new THREE.MeshBasicMaterial({
           color: "#EE7AE9",
 
