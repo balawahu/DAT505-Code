@@ -1,7 +1,8 @@
 //Global variables
+//Create scene,camera,renderer,geometry,material and mesh
 var scene, camera, renderer;
 var geometry, material, mesh;
-
+//init function
 function init(){
   // Create an empty scene --------------------------
   scene = new THREE.Scene();
