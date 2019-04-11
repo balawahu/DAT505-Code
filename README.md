@@ -142,7 +142,8 @@ From this session I know how to init function that after clicking objects their 
 
 From this file I learn that how to load 3D objects to three.js and use objloader plug-ins.At the same time loading audio and changing objects colors randomly after clicking are also important points.
 
-3D object elephant model which is loaded to three.js is made by myself.This model is a final project in other former class.That final project topic is elephant. 
+3D object elephant model which is loaded to three.js is made by myself.This model is a final project in other former class.That final project topic is elephant.
+
 ----------
 
 *Session9*
