@@ -13,6 +13,8 @@ Session list
 
 Two spheregeometries rotate on X and Y.Material of insided ball is normal and outsided ball is consist of red line.Whose color is defined as RGB.
 
+From session 1 I can learn that how to create objects and define materials,rotations and colors.
+
 *Session2*
 
 1.![Image text](https://raw.githubusercontent.com/balawahu/DAT505-Code/master/Pictures/2.PNG)
@@ -20,10 +22,14 @@ Two spheregeometries rotate on X and Y.Material of insided ball is normal and ou
 
 One box rotate with normal material.
 
+From this project I can learn differences between materials.BasicMaterial can reflect light and show textures while NormalMaterial will not.
+
 2.![Image text](https://raw.githubusercontent.com/balawahu/DAT505-Code/master/Pictures/3.PNG)
 (DAT505-GitHub\Session2\02-MaterialsTest\S2-01_Exercise-GeometriesAndMaterials-SOLVED)
 
 Different objects rotate in different directions with various textures.
+
+From this project I can know that how to define different txtures and put pictures on objects.
 
 *Session3*
 
@@ -32,13 +38,19 @@ Different objects rotate in different directions with various textures.
 
 One cube rotate and controller page can control its scale,position and rotation.
 
+From this project I can know how to add controller page,define which should be controlled and range.At the same time I learn how to use library resources.
+
 2.![Image text](https://raw.githubusercontent.com/balawahu/DAT505-Code/master/Pictures/5.PNG)
 (DAT505-GitHub/Session3/01_BasicGUI-example/index.html)
 
 One cube with a controller page which can change its scale,position,rotation and color.Especially color controller has wide range of RGB color.
 
+In this session I learn how to set a color range.
+
 3.![Image text](https://raw.githubusercontent.com/balawahu/DAT505-Code/master/Pictures/First%20homework.PNG)
 ( DAT505-GitHub\Session3\homework1)
+
+This is the first individual creative project.
 
 Rotation and angle of objects can be controlled by players on X,Y and Z.Colors of different objects will change in every angle.I want to practise what I learnt at that time.Further more,in other angles player will just see different cubes in different colors but every objects will consist of a new square in special angle.Two rings moving around them are aim to show
 "round sky and square earth" which is a proverb in ancient time.
@@ -50,10 +62,14 @@ Rotation and angle of objects can be controlled by players on X,Y and Z.Colors o
 
 Cubes with different colors rotate in different directions randomly, their positions and colors are based on round-robin algorithm.
 
+From this session I know how to set different cubes rotation directions and define their positions by round-robin codes.
+
 2.![Image text](https://raw.githubusercontent.com/balawahu/DAT505-Code/master/Pictures/7.PNG)
 ( DAT505-GitHub\Session4\S4-ArrayMesh)
 
 One box is made up of small cubes with different colors.These cubes are divided into eight groups.Cubes in one group has same color and will rotate in the same direction. As time goes by they will change their lengths.
+
+From this project I know how to put objects in a group and make objects lengths change as time goes by.
 
 *Session5*
 
@@ -62,12 +78,16 @@ One box is made up of small cubes with different colors.These cubes are divided 
 
 Two cubes rotate in different directions while other cubes remain stationary.
 
+From this project I know how to define cube rotate separately.
+
 *Session6*
 
 1.![Image text](https://raw.githubusercontent.com/balawahu/DAT505-Code/master/Pictures/9.PNG)
 ( Session6\S6-01-CityScape-full)
 
 A city consist of many cubes with lines is standing on a plane.Camera can move by mouse.
+
+From this project I know how to build a city by easily way and how to write codes about initing function of camera view angle by mouse.
 
 *Session7*
 
@@ -76,10 +96,14 @@ A city consist of many cubes with lines is standing on a plane.Camera can move b
 
 Cubes fall down from the top of screen with randomly texture and number of cubes is infinite.Also which cube will fall down next is randomly.
 
+From this project I know how to make cubes appear randomly.
+
 2.![Image text](https://raw.githubusercontent.com/balawahu/DAT505-Code/master/Pictures/11.PNG)
 ( DAT505-GitHub\S7-03-Texture-Eyes-Interaction)
 
 Eyes directions will follow the mouse and their positions are random.After updating the webpage their locations will change.
+
+From this project I learn how to change objects facing directions follow mouse and define their positions on random.
 
 *Session8*
 
@@ -88,15 +112,21 @@ Eyes directions will follow the mouse and their positions are random.After updat
 
 Five eyes directions will follow the mouse and their positions are also on random.
 
+From this project I know how to set one or more objects rotation directions follow mouse while other objects do not.
+
 2.![Image text](https://raw.githubusercontent.com/balawahu/DAT505-Code/master/Pictures/13.PNG)
 ( DAT505-GitHub\S8-01-RaycastSprite)
 
 Three cubes will change their scales after clicking.At the same time their colors will also change on random if clicked.
 
+From this session I know how to init function that after clicking objects their colors and scales will change.
+
 3.![Image text](https://raw.githubusercontent.com/balawahu/DAT505-Code/master/Pictures/14.PNG)
 ( DAT505-GitHub\S8-02-objLoader-Raycasting1\S8-02-objLoader-Raycasting)
 
 3D objects are loaded by objloader to scene and they can change color randomly after being clicked.Every objects will also make sound after clicking.
+
+From this file I learn that how to load 3D objects to three.js and use objloader plug-ins.At the same time loading audio and changing objects colors randomly after clicking are also important points.
 
 *Session9*
 
@@ -105,10 +135,15 @@ Three cubes will change their scales after clicking.At the same time their color
 
 Every 3D object will change to red color when mouse touch it.
 
+From this file I know how to load 3D objects and make objects show special color when mouse is put on them.
+
 2.![Image text](https://raw.githubusercontent.com/balawahu/DAT505-Code/master/Pictures/16.PNG)
 (DAT505-GitHub\S9-02-PostProcessing-Glitch)
 
 Screen will make special effect evey half a minute.
+
+From this project I know some basic knowlege about shader and how to make deform animation.
+
 ----------
 
 07/04/2019
