@@ -15,6 +15,8 @@ Two spheregeometries rotate on X and Y.Material of insided ball is normal and ou
 
 From session 1 I can learn that how to create objects and define materials,rotations and colors.
 
+-------
+
 *Session2*
 
 1.![Image text](https://raw.githubusercontent.com/balawahu/DAT505-Code/master/Pictures/2.PNG)
@@ -30,6 +32,8 @@ From this project I can learn differences between materials.BasicMaterial can re
 Different objects rotate in different directions with various textures.
 
 From this project I can know that how to define different txtures and put pictures on objects.
+
+--------
 
 *Session3*
 
@@ -55,6 +59,8 @@ This is the first individual creative project.
 Rotation and angle of objects can be controlled by players on X,Y and Z.Colors of different objects will change in every angle.I want to practise what I learnt at that time.Further more,in other angles player will just see different cubes in different colors but every objects will consist of a new square in special angle.Two rings moving around them are aim to show
 "round sky and square earth" which is a proverb in ancient time.
 
+----------
+
 *Session4*
 
 1.![Image text](https://raw.githubusercontent.com/balawahu/DAT505-Code/master/Pictures/6.PNG)
@@ -71,6 +77,8 @@ One box is made up of small cubes with different colors.These cubes are divided 
 
 From this project I know how to put objects in a group and make objects lengths change as time goes by.
 
+-------
+
 *Session5*
 
 1.![Image text](https://raw.githubusercontent.com/balawahu/DAT505-Code/master/Pictures/8.PNG)
@@ -80,6 +88,8 @@ Two cubes rotate in different directions while other cubes remain stationary.
 
 From this project I know how to define cube rotate separately.
 
+--------
+
 *Session6*
 
 1.![Image text](https://raw.githubusercontent.com/balawahu/DAT505-Code/master/Pictures/9.PNG)
@@ -88,6 +98,8 @@ From this project I know how to define cube rotate separately.
 A city consist of many cubes with lines is standing on a plane.Camera can move by mouse.
 
 From this project I know how to build a city by easily way and how to write codes about initing function of camera view angle by mouse.
+
+---------
 
 *Session7*
 
@@ -104,6 +116,8 @@ From this project I know how to make cubes appear randomly.
 Eyes directions will follow the mouse and their positions are random.After updating the webpage their locations will change.
 
 From this project I learn how to change objects facing directions follow mouse and define their positions on random.
+
+----------
 
 *Session8*
 
@@ -127,6 +141,8 @@ From this session I know how to init function that after clicking objects their 
 3D objects are loaded by objloader to scene and they can change color randomly after being clicked.Every objects will also make sound after clicking.
 
 From this file I learn that how to load 3D objects to three.js and use objloader plug-ins.At the same time loading audio and changing objects colors randomly after clicking are also important points.
+
+----------
 
 *Session9*
 
