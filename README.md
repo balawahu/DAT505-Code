@@ -115,7 +115,7 @@ From this project I know how to make cubes appear randomly.
 
 Eyes directions will follow the mouse and their positions are random.After updating the webpage their locations will change.
 
-From this project I learn how to change objects facing directions follow mouse and define their positions on random.
+From this project I learn how to change objects facing directions follow mouse,put Interaction functions on objects and define their positions on random.
 
 ----------
 
