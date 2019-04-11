@@ -27,7 +27,7 @@ function init(){
 function geometry(){
   // Create a Cube Mesh with basic material ---------
   geometry1 = new THREE.SphereGeometry(200, 12, 12);
-  material = new THREE.MeshNormalMaterial({color:"#DC143C"} );
+  material = new THREE.MeshNormalMaterial({color:"#DC143C"} );//NormalMaterial will not reflect light and  textures
   mesh1 = new THREE.Mesh( geometry1, material );
   mesh1.position.set(0,0,0);
   mesh1.position.z = -1000;
@@ -37,10 +37,10 @@ function geometry(){
   // Add mesh to scene
   scene.add( mesh1 );
 
-
+//Create object and define its material and position
   geometry2= new THREE.SphereGeometry(250,8, 8);
   material2 = new THREE.MeshBasicMaterial( { wireframe:true,
-    color: "#ff0001" } );
+    color: "#ff0001" } );//BasicMaterial can reflect light and textures
   mesh2 = new THREE.Mesh( geometry2, material2 );
   mesh2.position.set(1,1,1);
   mesh2.position.z = -800;
