@@ -115,16 +115,6 @@ One box is made up of small cubes with different colors.These cubes are divided 
        boxMaterial = new THREE.MeshLambertMaterial({color: 0xF67280});
       }else if ( x <= 0 && y >=0 && z >= 0){
       boxMaterial = new THREE.MeshLambertMaterial({color: 0x9F79EE});
-    }else if ( x >= 0 && y <=0 && z >= 0){
-      boxMaterial =new THREE.MeshLambertMaterial({color:0xEEC900});
-    }else if ( x <= 0 && y <=0 && z >= 0){
-      boxMaterial =new THREE.MeshLambertMaterial({color:0xF98777});
-    }else if ( x >= 0 && y >=0 && z <= 0){
-      boxMaterial =new THREE.MeshLambertMaterial({color:0x7EC0EE});
-    }else if ( x <= 0 && y >=0 && z <= 0){
-      boxMaterial =new THREE.MeshLambertMaterial({color:0xF72890});
-    }else if ( x >= 0 && y <=0 && z <= 0){
-      boxMaterial =new THREE.MeshLambertMaterial({color:0xF26278});
     }
 ```
 
