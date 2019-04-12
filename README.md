@@ -101,6 +101,7 @@ Cubes with different colors rotate in different directions randomly, their posit
     var boxMaterial = new THREE.MeshLambertMaterial({color: Math.random() * 0xFFFFFF});
     var mesh = new THREE.Mesh(boxGeometry, boxMaterial);
 ```
+
     These codes are to define cube number,color material and position in a short way.
 
 From this session I know how to set different cubes rotation directions and define their positions by round-robin codes.
