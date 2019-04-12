@@ -111,7 +111,8 @@ From this session I know how to set different cubes rotation directions and defi
 
 One box is made up of small cubes with different colors.These cubes are divided into eight groups.Cubes in one group has same color and will rotate in the same direction. As time goes by they will change their lengths.
 
-```if (x >= 0 && y >= 0 && z >= 0){
+```
+if (x >= 0 && y >= 0 && z >= 0){
        boxMaterial = new THREE.MeshLambertMaterial({color: 0xF67280});
       }else if ( x <= 0 && y >=0 && z >= 0){
       boxMaterial = new THREE.MeshLambertMaterial({color: 0x9F79EE});
