@@ -37,10 +37,10 @@ From this project I can learn differences between materials.BasicMaterial can re
 Different objects rotate in different directions with various textures.
 
 ```var texture3 =  new THREE.TextureLoader().load( 'textures/1.jpg' );
-
-var material9 = new THREE.MeshBasicMaterial({map:texture7});
 ```
-This code is to put picture texture on object
+```var material9 = new THREE.MeshBasicMaterial({map:texture7});
+```
+These codes are to put picture texture on object
 
 From this project I can know that how to define different txtures and put pictures on objects.
 
@@ -53,7 +53,19 @@ From this project I can know that how to define different txtures and put pictur
 
 One cube rotate and controller page can control its scale,position and rotation.
 
-
+```var controller=new function(){
+  this.scaleX=1;
+  this.scaleY=1;
+  this.scaleZ=1;
+  this.positionX=0;
+  this.positionY=0;
+  this.positionZ=-400;
+  this.rotationX=1;
+  this.rotationY=1;
+  this.rotationZ=1;
+}
+```
+These codes are to add controller page and which should be controlled.
 
 From this project I can know how to add controller page,define which should be controlled and range.At the same time I learn how to use library resources.
 
