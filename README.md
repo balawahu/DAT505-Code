@@ -13,6 +13,11 @@ Session list
 
 Two spheregeometries rotate on X and Y.Material of insided ball is normal and outsided ball is consist of red line.Whose color is defined as RGB.
 
+```var scene, camera, renderer;
+var geometry1,geometry2, material,material, mesh1,mesh2,border,i,j,k;
+```
+These codes are aimed to create objects,empty scene,camera,renderer,material,mesh and border.
+
 From session 1 I can learn that how to create objects and define materials,rotations and colors.
 
 -------
@@ -31,6 +36,12 @@ From this project I can learn differences between materials.BasicMaterial can re
 
 Different objects rotate in different directions with various textures.
 
+```var texture3 =  new THREE.TextureLoader().load( 'textures/1.jpg' );
+
+var material9 = new THREE.MeshBasicMaterial({map:texture7});
+```
+This code is to put picture texture on object
+
 From this project I can know that how to define different txtures and put pictures on objects.
 
 --------
@@ -41,6 +52,8 @@ From this project I can know that how to define different txtures and put pictur
 (DAT505-GitHub\Session3\00-BasicStructure-GUL)
 
 One cube rotate and controller page can control its scale,position and rotation.
+
+
 
 From this project I can know how to add controller page,define which should be controlled and range.At the same time I learn how to use library resources.
 
