@@ -54,7 +54,7 @@ function animate() {
 	// Call the requestAnimationFrame function on the animate function
 	// 	(thus creating an infinite loop)
 	requestAnimationFrame( animate );
-
+//Make objects appear randomly
 	for (var i=0;i<cubes.length;i++){
 		// Rotate the x position of the mesh by 0.03
 		cubes[i].rotation.x += 0.02;

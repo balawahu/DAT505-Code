@@ -149,6 +149,11 @@ From this project I know how to define cube rotate separately.
 
 A city consist of many cubes with lines is standing on a plane.Camera can move by mouse.
 
+```
+floor.rotation.x = -0.5 * Math.PI;
+```
+These codes are to make plane rotate.
+
 From this project I know how to build a city by easily way and how to write codes about initing function of camera view angle by mouse.
 
 ---------
@@ -175,6 +180,11 @@ From this project I learn how to change objects facing directions follow mouse,p
 
 1.![Image text](https://raw.githubusercontent.com/balawahu/DAT505-Code/master/Pictures/12.PNG)
 ( DAT505-GitHub\S8-00-Texture-Eyes-Interaction2X)
+
+```
+xPosMap[i] = map_range(xPos[i], -50, 50, 0, window.innerWidth);
+```
+Define interactive range on X,Y and Z.
 
 Five eyes directions will follow the mouse and their positions are also on random.
 

@@ -105,7 +105,7 @@ color: Math.random()});
 function draw() {
   renderer.render( scene, camera );
 }
-
+//Define objects position
 // UPDATE =======================================================
 function update(delta) {
   controls.update(delta);
