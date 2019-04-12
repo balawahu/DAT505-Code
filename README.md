@@ -132,6 +132,12 @@ From this project I know how to put objects in a group and make objects lengths 
 
 Two cubes rotate in different directions while other cubes remain stationary.
 
+```
+cubes[6].rotation.x += randomSpeedX[6];
+cubes[18].rotation.z += randomSpeedY[18];
+```
+These codes are to make special object rotate.
+
 From this project I know how to define cube rotate separately.
 
 --------
