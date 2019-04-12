@@ -202,6 +202,14 @@ From this session I know how to init function that after clicking objects their 
 
 3D objects are loaded by objloader to scene and they can change color randomly after being clicked.Every objects will also make sound after clicking.
 
+```
+var objLoader = new THREE.OBJLoader();
+objLoader.setMaterials(materials);
+
+  objLoader.load("daxiang1.obj", function(mesh){
+  ```
+  These codes are to load 3D object.
+  
 From this file I learn that how to load 3D objects to three.js and use objloader plug-ins.At the same time loading audio and changing objects colors randomly after clicking are also important points.
 
 3D object elephant model which is loaded to three.js is made by myself.This model is a final project in other former class.That final project topic is elephant.
