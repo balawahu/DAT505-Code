@@ -93,6 +93,16 @@ Rotation and angle of objects can be controlled by players on X,Y and Z.Colors o
 
 Cubes with different colors rotate in different directions randomly, their positions and colors are based on round-robin algorithm.
 
+```
+for (var x = -35; x < 40; x += 5) { // Start from -35 and sequentially add one every 5 pixels
+  for (var y = -35; y < 40; y += 5) {
+    var boxGeometry = new THREE.BoxGeometry(3, 3, 3);
+    //The color of the material is assigned a random color
+    var boxMaterial = new THREE.MeshLambertMaterial({color: Math.random() * 0xFFFFFF});
+    var mesh = new THREE.Mesh(boxGeometry, boxMaterial);
+    ```
+    These codes are to define cube number,color material and position in a short way.
+
 From this session I know how to set different cubes rotation directions and define their positions by round-robin codes.
 
 2.![Image text](https://raw.githubusercontent.com/balawahu/DAT505-Code/master/Pictures/7.PNG)
