@@ -102,7 +102,7 @@ Cubes with different colors rotate in different directions randomly, their posit
     var mesh = new THREE.Mesh(boxGeometry, boxMaterial);
 ```
 
-    These codes are to define cube number,color material and position in a short way.
+These codes are to define cube number,color material and position in a short way.
 
 From this session I know how to set different cubes rotation directions and define their positions by round-robin codes.
 
@@ -110,6 +110,25 @@ From this session I know how to set different cubes rotation directions and defi
 ( DAT505-GitHub\Session4\S4-ArrayMesh)
 
 One box is made up of small cubes with different colors.These cubes are divided into eight groups.Cubes in one group has same color and will rotate in the same direction. As time goes by they will change their lengths.
+
+```if (x >= 0 && y >= 0 && z >= 0){
+       boxMaterial = new THREE.MeshLambertMaterial({color: 0xF67280});
+      }else if ( x <= 0 && y >=0 && z >= 0){
+      boxMaterial = new THREE.MeshLambertMaterial({color: 0x9F79EE});
+    }else if ( x >= 0 && y <=0 && z >= 0){
+      boxMaterial =new THREE.MeshLambertMaterial({color:0xEEC900});
+    }else if ( x <= 0 && y <=0 && z >= 0){
+      boxMaterial =new THREE.MeshLambertMaterial({color:0xF98777});
+    }else if ( x >= 0 && y >=0 && z <= 0){
+      boxMaterial =new THREE.MeshLambertMaterial({color:0x7EC0EE});
+    }else if ( x <= 0 && y >=0 && z <= 0){
+      boxMaterial =new THREE.MeshLambertMaterial({color:0xF72890});
+    }else if ( x >= 0 && y <=0 && z <= 0){
+      boxMaterial =new THREE.MeshLambertMaterial({color:0xF26278});
+    }
+```
+
+These codes divide cubes in different groups and define colors.
 
 From this project I know how to put objects in a group and make objects lengths change as time goes by.
 
