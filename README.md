@@ -37,8 +37,7 @@ From this project I can learn differences between materials.BasicMaterial can re
 Different objects rotate in different directions with various textures.
 
 ```var texture3 =  new THREE.TextureLoader().load( 'textures/1.jpg' );
-```
-```var material9 = new THREE.MeshBasicMaterial({map:texture7});
+   var material9 = new THREE.MeshBasicMaterial({map:texture7});
 ```
 These codes are to put picture texture on object
 
