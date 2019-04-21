@@ -16,7 +16,7 @@ var mouseVector = new THREE.Vector3();
 var selectedObject = null;
 //var skyBoxGeometry,skyBoxMaterial,skyBox;
 var controls;
-var isRemove = false;
+var isRemove = false;//Create array
 const vertexShader = ['varying vec3 vNormal;', 'void main() {', 'vNormal = normalize( normalMatrix * normal );', 'gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );', '}'].join('\n')
 const fragmentShader = ['uniform float c;', 'uniform float p;', 'varying vec3 vNormal;', 'void main() {', 'float intensity = pow( c - dot( vNormal, vec3( 0.0, 0.0, 1.0 ) ), p );', 'gl_FragColor = vec4( 0.2, 0.58, 0.9, 0.3 ) * intensity;', '}'].join('\n')
 function init() {
@@ -30,7 +30,7 @@ function init() {
   scene.add(clickGroup);
   scene.background = new THREE.CubeTextureLoader()//add skybox and put pictures on it
     .setPath('textures//')
-    .load(['star.jpg', 'star1.jpg', 'star2.jpg', 'star3.jpg', 'star4.jpg', 'star5.jpg']);
+    .load(['star.jpg', 'star1.jpg', 'star2.jpg', 'star3.jpg', 'star4.jpg', 'star5.jpg']);//load pictures
 
   // Create a basic perspective camera --------------
   //camera = new THREE.PerspectiveCamera(35, window.innerWidth/window.innerHeight, 300, 10000 );
@@ -58,7 +58,7 @@ function init() {
 
   // Append Renderer to DOM
   document.body.appendChild(renderer.domElement);
-
+//Create light halo around earth
   glowGroup1 = new THREE.Group();
   let sphere1 = new THREE.SphereGeometry(200, 40, 40)
   let materialGlow1 = new THREE.ShaderMaterial({
@@ -68,7 +68,7 @@ function init() {
     },
     vertexShader,
     fragmentShader
-  });
+  });//Add halo and define details
   glowSphere1 = new THREE.Mesh(sphere1, materialGlow1);
   glowSphere1.material.side = THREE.BackSide
   glowSphere1.material.transparent = true;
@@ -76,14 +76,14 @@ function init() {
   glowSphere1.position.z = -1170;
   glowGroup1.add(glowSphere1);
 
-  // Create a Cube Mesh with basic material ---------
+  // ---------
   geometry = new THREE.SphereGeometry(300, 100, 100);
   var texture = new THREE.TextureLoader().load('textures/earth.jpg');
   var material = new THREE.MeshBasicMaterial({ map: texture });
   mesh = new THREE.Mesh(geometry, material);
   mesh.position.z = -1000;
   //this.earth = geometry;
-  scene.add(glowGroup1);
+  scene.add(glowGroup1);//Add glowGroup to scene
   clickGroup.add(glowGroup1);
   glowGroup0 = new THREE.Group()
   let sphere0 = new THREE.SphereGeometry(200, 40, 40)
@@ -94,7 +94,7 @@ function init() {
     },
     vertexShader,
     fragmentShader
-  });
+  });//Add halo to moon
   glowSphere0 = new THREE.Mesh(sphere0, materialGlow0)
   glowSphere0.material.side = THREE.BackSide
   glowSphere0.material.transparent = true;
@@ -114,7 +114,7 @@ function init() {
   mesh7.position.z = 0;
   scene.add(mesh7);
   clickGroup.add(mesh7);
-
+//Add  rotation center to click group
   geometry14 = new THREE.SphereGeometry(10, 100, 100);
   material14 = new THREE.MeshNormalMaterial({ color: 0xf02376 });
   mesh14 = new THREE.Mesh(geometry7, material7);
@@ -128,7 +128,7 @@ function init() {
   mesh8 = new THREE.Mesh(geometry7, material7);
   mesh8.position.z = 0;
   scene.add(mesh8);
-  mesh8.add(mesh);
+  mesh8.add(mesh);//Add mesh to mesh8 to make object rotate
   glowGroup1.add(mesh8);
   clickGroup.add(glowGroup1);
 
@@ -179,7 +179,7 @@ function init() {
   mesh14 = new THREE.Mesh(geometry14, material14);
   mesh14.position.z = 0;
   scene.add(mesh14);
-  mesh14.add(mesh10, mesh15);
+  mesh14.add(mesh10, mesh15);//Put mesh10 and mesh15 to mesh14 to let them rotate around mesh14
   clickGroup.add(mesh14);
 //bluestar
   var geometry13 = new THREE.SphereGeometry(180, 100, 100);
@@ -224,8 +224,8 @@ function init() {
   mesh9.position.z = 0;
   scene.add(mesh9);
   mesh9.add(mesh6);
-  clickGroup.add(mesh9);
-
+  clickGroup.add(mesh9);//Add mesh to click group
+//Add UI page and make it reflect to HTML
   document.getElementById("UI").style.visibility = "visible";
 
 
@@ -267,7 +267,7 @@ function init() {
   scene.add(city);
 
 
-//rotation small stones with random position
+//rotate small stones with random position
   var geometry2 = new THREE.SphereGeometry(7, 3, 3);//
   for (var i = 0; i < 1500; i++) {
     var texture2 = new THREE.TextureLoader().load('textures/stone2.jpg');
@@ -318,7 +318,7 @@ function init() {
   var f2 = gui.addFolder('Position');
   var f3 = gui.addFolder('Rotation');
 
-
+//Define control page details for which thing of object should be controlled
   f2.add(controller, 'positionX', -500, 500).onChange(function () {
     mesh.position.x = (controller.positionX);
 
@@ -413,13 +413,13 @@ var render = function () {
 
   renderer.render(scene, camera);
 };
-
+//Add click function to objects and load UI pictures
 function onDocumentMouseDown(event) {
   event.preventDefault();
   if (selectedObject) {
     selectedObject = null;
   }
-
+//Add intersects
   var intersects = getIntersects(event.layerX, event.layerY);
   if (intersects.length > 0) {
     var res = intersects.filter(function (res) {
@@ -429,7 +429,7 @@ function onDocumentMouseDown(event) {
       selectedObject = res.object;
       // 3FADB874-7BAA-4C87-AB4A-CEE529286E76
       console.log(selectedObject);
-
+//Click object and halo appear
       if (selectedObject.uuid ==
         mesh.uuid) {
         if (!isRemove) {
@@ -489,7 +489,7 @@ function onDocumentMouseDown(event) {
       // selectedObject.material.color.set("#f00");
     }
   }
-}
+}//Define range of intersects
 function getIntersects(x, y) {
   x = (x / window.innerWidth) * 2 - 1;
   y = - (y / window.innerHeight) * 2 + 1;
