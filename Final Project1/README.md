@@ -10,6 +10,7 @@ We can see this sceen from different angles by moving mouse and we can find that
 
 On the other hand when we click other planet there will appear a picture on the screen.Choosing different planets
 will show different pictures and they are all chinese paintings by ancient artist Tao Shi in Xieyi style.Tao Shi is one of the most outstanding painters in chinese history and his works are regarded as a symbol of traditional chinese paintings.
+
 *Session1*
 
 
