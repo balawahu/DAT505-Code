@@ -209,7 +209,7 @@ objLoader.setMaterials(materials);
   objLoader.load("daxiang1.obj", function(mesh){
   ```
   These codes are to load 3D object.
-  
+
 From this file I learn that how to load 3D objects to three.js and use objloader plug-ins.At the same time loading audio and changing objects colors randomly after clicking are also important points.
 
 3D object elephant model which is loaded to three.js is made by myself.This model is a final project in other former class.That final project topic is elephant.
@@ -231,6 +231,14 @@ From this file I know how to load 3D objects and make objects show special color
 Screen will make special effect evey half a minute.
 
 From this project I know some basic knowlege about shader and how to make deform animation.
+
+----------
+
+*Final Project*
+2.![Image text](https://raw.githubusercontent.com/balawahu/DAT505-Code/master/Final%20Project1/截图2.JPG)
+(DAT505-GitHub\Final Project1)
+
+The final project for DAT505 which use knowledge from class and other technology that I learn from Internet,references and teacher.
 
 ----------
 

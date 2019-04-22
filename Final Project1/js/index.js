@@ -16,7 +16,7 @@ var mouseVector = new THREE.Vector3();
 var selectedObject = null;
 //var skyBoxGeometry,skyBoxMaterial,skyBox;
 var controls;
-var isRemove = false;//Create array
+var isRemove = false;//Create array and fixed function graphics pipeline
 const vertexShader = ['varying vec3 vNormal;', 'void main() {', 'vNormal = normalize( normalMatrix * normal );', 'gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );', '}'].join('\n')
 const fragmentShader = ['uniform float c;', 'uniform float p;', 'varying vec3 vNormal;', 'void main() {', 'float intensity = pow( c - dot( vNormal, vec3( 0.0, 0.0, 1.0 ) ), p );', 'gl_FragColor = vec4( 0.2, 0.58, 0.9, 0.3 ) * intensity;', '}'].join('\n')
 function init() {
@@ -218,7 +218,7 @@ function init() {
   scene.add(mesh12);
   mesh12.add(mesh11);
   clickGroup.add(mesh12);
-  geometry9 = new THREE.SphereGeometry(10, 100, 100);
+  geometry9 = new THREE.SphereGeometry(10, 100, 100);//rotation center
   material9 = new THREE.MeshNormalMaterial({ color: 0xf02376 });
   mesh9 = new THREE.Mesh(geometry9, material9);
   mesh9.position.z = 0;
@@ -444,7 +444,7 @@ function onDocumentMouseDown(event) {
       if (selectedObject.uuid ==
         mesh6.uuid) {
         $(".ui-dialog").show();
-        $(".calssImg").attr("src", "./images/0.jpg");
+        $(".calssImg").attr("src", "./images/0.jpg");//load pictures and define absolute path
       }
 
       if (selectedObject.uuid ==
@@ -489,7 +489,7 @@ function onDocumentMouseDown(event) {
       // selectedObject.material.color.set("#f00");
     }
   }
-}//Define range of intersects
+}//Define range of mouse intersects
 function getIntersects(x, y) {
   x = (x / window.innerWidth) * 2 - 1;
   y = - (y / window.innerHeight) * 2 + 1;
