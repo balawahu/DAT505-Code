@@ -9,7 +9,9 @@ This project is aim to describe the relationship between universe and city.At th
 We can see this sceen from different angles by moving mouse and we can find that many planets rotate in various angles and all of them will pass by cities.I also put fog in this place to make cities look more beautiful.The moon will has a bright halo around it because I want to show that it is the central point and everything rotate around it.When we click earth there will be a halo appear around the earth because earth play an important role in solar system and it is home for us.
 
 On the other hand when we click other planet there will appear a picture on the screen.Choosing different planets
-will show different pictures and they are all chinese paintings by ancient artist Tao Shi in Xieyi style.Tao Shi is one of the most outstanding painters in chinese history and his works are regarded as a symbol of traditional chinese paintings.
+will show different pictures and they are all chinese paintings by ancient artist Tao Shi in Xieyi style.Tao Shi is one of the most outstanding painters in chinese history and his works are regarded as a symbol of traditional chinese paintings.When we click the button the picture will disappear.
+
+The control page on the screen can change position,rotation of earth.
 
 *Session1*
 
