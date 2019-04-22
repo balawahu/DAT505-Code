@@ -59,6 +59,7 @@ These codes from index.html are to create UI page and decide details like conten
 These codes from css.style are to decide size of UI and range of picture which will be showed on the screen.
 
 *GitHub Link*
+
 https://github.com/balawahu/DAT505-Code
 
 ----------
