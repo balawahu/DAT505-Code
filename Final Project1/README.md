@@ -27,9 +27,11 @@ During the process of making project I find that there are many ways to make a s
 *Picture*
 
 ![Image text](https://raw.githubusercontent.com/balawahu/DAT505-Code/master/Final%20Project1/images/7.jpg)
+
 This is one of the pictures for UI page and they are all 567*567px.
 
 *Picture image*
+
 ![Image text](https://raw.githubusercontent.com/balawahu/DAT505-Code/master/Final%20Project1/截图.JPG)
 When we click the planet there will be a picture which shows chinese traditional painting.After clicking the button "Continue" the picture will disappear.
 
