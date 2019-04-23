@@ -2,6 +2,7 @@
 This is a describtion about final project for DAT505 module
 
 Name：Yunqing Shao
+
 Number:B161006078
 
 ----------
@@ -30,6 +31,8 @@ During the process of making project I find that there are many ways to make a s
 
 This is one of the pictures for UI page and they are all 567*567px.
 
+------
+
 *Picture image*
 
 ![Image text](https://raw.githubusercontent.com/balawahu/DAT505-Code/master/Final%20Project1/截图.JPG)
@@ -40,6 +43,8 @@ When we click earth there will appear a bright halo around earth and when we cli
 
 ![Image text](https://raw.githubusercontent.com/balawahu/DAT505-Code/master/Final%20Project1/截图4.JPG)
 Clicking different planets will show corresponding paintings.
+
+------
 
 *Codes*
 ```
@@ -75,6 +80,8 @@ These codes from index.html are to create UI page and decide details like conten
 }
 ```
 These codes from css.style are to decide size of UI and range of picture which will be showed on the screen.
+
+-----
 
 *GitHub Link*
 
