@@ -19,6 +19,8 @@ The control page on the screen can change position,rotation of earth.From my per
 
 When I make this project I met some problems.For example,I plan to make different objects rotate around the central point so that I search for references on the Internet and try a lot of times but there always be many mistakes.Finally I find a simple solution that put one mesh in the  mesh2 and define rotation of mesh2 so that mesh and mesh2 are in one group and when mesh2 rotate mesh can rotate with it.On the screen it looks like mesh rotate around mesh2.
 
+At the beginning I want to put background in this screen and I find that there are many ways to load background such as loade panoramic picture and create skybox.From my point of view that creating skybox is easier for my laptop to run so that I choose this.
+
 Another challenge for me is to create a function that click the object there will be a picture appear on the screen.I put a intersect on object and load a corresponding picture to UI.I find some related references about how to make UI page on the Internet and create two kinds of UI.One is created by codes which are in HTMl and the other one is created by css.Both of them need reflect in js and I design size of UI in css while load pictures in js.To be more specific,UI page also has a button which can make it disappear and I ask teacher for help about how to create a button.
 
 During the process of making project I find that there are many ways to make a same function and we can choose the most valuable one.Many functions seem to be very difficult but actually they just need simple codes.In conclusion,this project is a very interesting experience for me to learn about three.js.
@@ -33,7 +35,7 @@ This is one of the pictures for UI page and they are all 567*567px.
 
 ------
 
-*Picture image*
+*Screen Preview*
 
 ![Image text](https://raw.githubusercontent.com/balawahu/DAT505-Code/master/Final%20Project1/截图.JPG)
 When we click the planet there will be a picture which shows chinese traditional painting.After clicking the button "Continue" the picture will disappear.
