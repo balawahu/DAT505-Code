@@ -6,7 +6,7 @@ Name：Yunqing Shao
 Number:B161006078
 
 ----------
-*About this project*
+## About this project
 
 This project is aim to describe the relationship between universe and city.A city was put in solar system while earth,moon,mercury,jupiter,saturnus and other stars rotate in it.I want to express that with the rapid growth of population the earth can not afford more.The spaces are becoming more and more crowed.At the same time I want to combine ancient culture with modern technology.I put small planet with huge and crowned buildings to creates a sharp contrast.
 
@@ -26,6 +26,11 @@ Another challenge for me is to create a function that click the object there wil
 During the process of making project I find that there are many ways to make a same function and we can choose the most valuable one.Many functions seem to be very difficult but actually they just need simple codes.In conclusion,this project is a very interesting experience for me to learn about three.js.
 
 -------
+### Structure
+
+1.Pictures are from images and textures(images for UI and textures for geometry)
+
+2.codes from css and js
 
 *Picture*
 
