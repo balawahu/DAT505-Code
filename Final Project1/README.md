@@ -87,7 +87,7 @@ These codes from css.style are to decide size of UI and range of picture which w
 
 *GitHub Link*
 
-https://github.com/balawahu/DAT505-Code
+https://github.com/balawahu/DAT505-Code/tree/master/Final%20Project1
 
 ----------
 
