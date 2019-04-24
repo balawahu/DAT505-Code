@@ -28,7 +28,8 @@
 </head>
 
 <body>
-
+    <audio class="music" src="music/09. Simplicity.mp3" autoplay></audio>
+  <!-- 音乐 -->
   <div class="ui-dialog ui-dialog-operate">
     <div class="ui-dialog-cnt" style="border: 1px solid #ffffff;">
       <img src="./images/0.jpg" alt="" srcset="" class="ui-img calssImg">
@@ -43,6 +44,14 @@
     $(".ui-btn").click(function () {
       $(".ui-dialog").hide();
     });
+
+
+    const worldMusic = document.querySelector('.music');
+    worldMusic.volume = 0.3;
+    worldMusic.loop = true;
+    // worldMusic.play();
+
+
   </script>
 
 
