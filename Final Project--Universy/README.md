@@ -3,7 +3,7 @@ This is a describtion about final project for DAT505 module
 
 Name：Yunqing Shao
 
-Number:B161006078
+Registration  Number:B161006078
 
 ----------
 ## About this project
